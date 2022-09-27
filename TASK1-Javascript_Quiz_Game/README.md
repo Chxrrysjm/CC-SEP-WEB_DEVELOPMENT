@@ -21,7 +21,6 @@ Welcome to "Javascript Quiz App with HTML, CSS, and Jquery". Javascript Quiz App
 1. Render answer choices in a form.
 2. Use semantic HTML, along with CSS and jQuery.
 3. Responsive.
-4. Fully usable by keyboard.
 
 ### Technology:
 HTML5, CSS3 and jQuery.
