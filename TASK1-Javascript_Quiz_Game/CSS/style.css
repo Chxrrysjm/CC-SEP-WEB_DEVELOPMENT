@@ -1,0 +1,411 @@
+body {
+    background: linear-gradient(180deg, #FED6E3 0%, #D6E0E6 52.4%, #A8EDEA 100%);
+    background-repeat: repeat-y;
+    background-attachment: fixed;
+    background-size: 100%;
+    font-family: Cabin;
+    padding: 60px 0 0;
+    margin: 0;
+    font-size: 15px;
+
+}
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+body * {
+    box-sizing: border-box;
+}
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+.home-start {
+    position: relative;
+}
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+fieldset {
+    padding: 0;
+    border: 0;
+    margin-top: 10px;
+    text-align: center;
+
+    word-wrap: break-word;
+
+}
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+.sofagirl {
+    position: absolute;
+
+    margin-top: 200px;
+
+    width: 500px;
+    height: 200px;
+
+    object-fit: none;
+    object-position: center top;
+
+}
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+.signup-form {
+    /*   width: 500px; */
+    text-align: center;
+    position: relative;
+    padding: 20px;
+    width: 1010px;
+    height: 610px;
+    left: 15%;
+    top: 35px;
+
+    background: linear-gradient(134.31deg,
+            rgba(101, 31, 143, 0.8) 31.29%,
+            rgba(59, 138, 155, 0.664) 83.83%);
+    background-blend-mode: hard-light;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 30px;
+}
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+.signup-form legend {
+
+    width: 100%;
+
+    line-height: 30px;
+    font-family: 'Francois One';
+    font-style: normal;
+    font-weight: 900;
+    font-size: 32px;
+    line-height: 50px;
+
+    letter-spacing: 0.03em;
+
+    background: linear-gradient(180deg, #A8EDEA 0%, #FED6E3 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+    text-fill-color: transparent;
+
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
+}
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+p {
+    margin-top: 10px;
+    /* position: absolute; */
+    font-family: Source Sans Pro;
+    font-style: normal;
+    font-weight: 100;
+    font-size: 18px;
+    line-height: 0.55px;
+    word-wrap: break-word;
+    /* identical to box height */
+
+    letter-spacing: 0.03em;
+
+    color: #ffffff;
+}
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+
+button[type="submit"] {
+
+    margin-top: 20px;
+    color: #651f8f 0%;
+    letter-spacing: 0.03em;
+    font-size: 18px;
+    font-weight: 550;
+    border: none;
+    display: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    gap: 10px;
+
+    opacity: 0.5;
+    transition: 0.6s;
+
+    width: 131px;
+    height: 98px;
+
+    background: radial-gradient(50% 50% at 50% 50%,
+            #ea82ff 0%,
+            rgba(101, 31, 143, 0) 100%);
+
+    flex: none;
+    order: 0;
+    flex-grow: 0;
+
+
+
+}
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    margin-top: 50px;
+    border: none;
+    display: space-between;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
+    gap: 10px;
+
+    width: 131px;
+    height: 98px;
+
+    background: radial-gradient(50% 50% at 50% 50%,
+            #651f8f 0%,
+            rgba(101, 31, 143, 0) 100%);
+
+    flex: 100em;
+    order: 0;
+    flex-grow: 0;
+
+}
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+button[type="previous"],
+button[type="next"] {
+    height: auto;
+    font-size: 18px;
+    font-weight: 240;
+    text-align: center;
+    padding: 15px;
+    flex: 20em;
+}
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+button[type="submit"]:hover,
+button[type="submit"]:focus {
+    opacity: 1;
+}
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+
+input[type="radio"] {
+    /* ...existing styles */
+    float: left;
+    appearance: none;
+    background-color: #fff;
+    margin-left: 10%;
+    font: inherit;
+    color: currentColor;
+    width: 1.15em;
+    height: 1.15em;
+    border: 0.15em solid currentColor;
+    border-radius: 50%;
+    transform: translateY(-0.075em);
+
+    display: grid;
+    place-content: flex-start;
+
+}
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+
+input[type="radio"]::before {
+    content: "";
+    width: 0.78em;
+    height: 0.78em;
+    border-radius: 50%;
+    transform: scale(0);
+    transition: 120ms transform ease-in-out;
+    box-shadow: inset 1em 1em var(--form-control-color);
+
+    /* Windows High Contrast Mode */
+    background-color: CanvasText;
+}
+
+
+input[type="radio"]:checked::before {
+    transform: scale(1);
+}
+
+
+
+.form-control+.form-control {
+    margin-top: 1em;
+}
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+label {
+
+    text-align: left;
+    font-size: 20px;
+    display: grid;
+    margin-bottom: 5px;
+    margin-left: 20%;
+}
+
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+footer {
+    position: absolute;
+    font-family: "Source Sans Pro";
+    bottom: -20px;
+    opacity: 0.5;
+    width: auto;
+    text-align: center;
+    color: black;
+    margin: 20px auto;
+    font-weight: 600;
+    border: 0;
+    padding: 0;
+}
+
+.footer a {
+    color: black;
+}
+
+.footer a:hover {
+    color: #E7F1F9;
+}
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+#error {
+    text-align: center;
+
+}
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+#sofa {
+    animation: object 2s cubic-bezier(0.20, 0.89, 0.32, 1.28);
+    transform-origin: left;
+    transform-box: fill-box;
+
+}
+
+
+
+#girl {
+
+    animation: object 2s cubic-bezier(0.18, 0.89, 0.40, 1.28);
+    transform-origin: left;
+    transform-box: fill-box;
+
+}
+
+
+@keyframes object {
+    from {
+        /* transform: rotateZ(0deg) ; */
+        transform: translateX(-200px);
+
+    }
+
+    to {
+        transform: translateX(1px);
+        ;
+
+    }
+}
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+
+.happyhrt {
+
+    height: 100px;
+
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+
+    animation: bounce 0.5s;
+    animation-direction: alternate;
+    animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    animation-iteration-count: infinite;
+}
+
+@keyframes bounce {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        transform: translate3d(0, 200px, 0);
+    }
+}
+
+
+happyhrt {
+    -webkit-animation-name: bounce;
+    -webkit-animation-duration: 0.5s;
+    -webkit-animation-direction: alternate;
+    -webkit-animation-timing-function: cubic-bezier(.5, 0.05, 1, .5);
+    -webkit-animation-iteration-count: infinite;
+}
+
+@-webkit-keyframes bounce {
+    from {
+        -webkit-transform: translate3d(0, 0, 0);
+        transform: translate3d(0, 0, 0);
+    }
+
+    to {
+        -webkit-transform: translate3d(0, 200px, 0);
+        transform: translate3d(0, 200px, 0);
+    }
+}
+
+
+/* _____________________________________________________________________________________________________________________________________ */
+
+.sadface {
+
+    height: 100px;
+
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+
+    animation: swing 2s cubic-bezier(0.34, 0.8, 0.37, 0.92);
+    animation-direction: alternate;
+    animation-iteration-count: infinite;
+    transform-origin: bottom;
+    transform-box: fill-box;
+}
+
+
+@keyframes swing {
+    from {
+
+        transform: translateX(60px);
+    }
+
+    to {
+
+        transform: translateX(-60px);
+
+    }
+}
