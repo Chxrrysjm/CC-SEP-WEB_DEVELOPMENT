@@ -25,6 +25,3 @@ Welcome to "Javascript Quiz App with HTML, CSS, and Jquery". Javascript Quiz App
 
 ### Technology:
 HTML5, CSS3 and jQuery.
-## Live link:
-  https://sultanak.github.io/Javascript-Quiz-App/
-
